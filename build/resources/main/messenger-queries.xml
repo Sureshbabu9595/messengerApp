@@ -1,0 +1,9 @@
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Messenger Queries</comment>
+    <entry key="insertMessage.query"><![CDATA[insert into 
+											T_MESSENGER(EMAIL_ADDRESS,MESSAGE_BODY) 
+											values(:emailAddress, :emailContent)]]></entry>
+    <entry key="fetchMessages.query"><![CDATA[Select MESSAGE_ID,EMAIL_ADDRESS,MESSAGE_BODY 
+												from T_MESSENGER order by MESSAGE_ID DESC]]></entry>
+</properties>

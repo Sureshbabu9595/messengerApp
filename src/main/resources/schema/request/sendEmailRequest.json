@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "emailAddress": "Ganga@abccorp.com",
+            "emailContent": "Hi Ganga Greetings.."
+        }
+    ],
+    "required": [
+        "emailAddress",
+        "emailContent"
+    ],
+    "properties": {
+        "emailAddress": {
+            "$id": "#/properties/emailAddress",
+            "type": "string",
+            "format": "email",
+            "minLength": 6,
+            "maxLength": 127,
+            "title": "The emailAddress schema",
+            "description": "Sender Email Address",
+            "default": "",
+            "examples": [
+                "Ganga@abccorp.com"
+            ]
+        },
+        "emailContent": {
+            "$id": "#/properties/emailContent",
+            "type": "string",
+            "title": "The emailContent schema",
+            "description": "Email Body",
+            "default": "",
+            "examples": [
+                "Hi Ganga Greetings.."
+            ]
+        }
+    },
+    "additionalProperties": true
+}

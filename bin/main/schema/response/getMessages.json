@@ -1,0 +1,94 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            {
+                "status": null,
+                "code": null,
+                "emailAddress": "Ganga@abccorp.com",
+                "emailContent": "Hi Ganga Greetings.."
+            },
+            {
+                "status": null,
+                "code": null,
+                "emailAddress": "suresh@abccorp.com",
+                "emailContent": "Hi Suresh Greetings.."
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "status": null,
+                        "code": null,
+                        "emailAddress": "Ganga@abccorp.com",
+                        "emailContent": "Hi Ganga Greetings.."
+                    }
+                ],
+                "required": [
+                    "status",
+                    "code",
+                    "emailAddress",
+                    "emailContent"
+                ],
+                "properties": {
+                    "status": {
+                        "$id": "#/items/anyOf/0/properties/status",
+                        "type": "null",
+                        "title": "The status schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "code": {
+                        "$id": "#/items/anyOf/0/properties/code",
+                        "type": "null",
+                        "title": "The code schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "emailAddress": {
+                        "$id": "#/items/anyOf/0/properties/emailAddress",
+                        "type": "string",
+                        "title": "The emailAddress schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Ganga@abccorp.com"
+                        ]
+                    },
+                    "emailContent": {
+                        "$id": "#/items/anyOf/0/properties/emailContent",
+                        "type": "string",
+                        "title": "The emailContent schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Hi Ganga Greetings.."
+                        ]
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+2022-03-29 01:01:21,143 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting MessengerAppApplication using Java 1.8.0_321 on Sureshs-MacBook-Pro.local with PID 982 (/Users/sureshbabu/Downloads/Apps/messengerApp/bin/main started by sureshbabu in /Users/sureshbabu/Downloads/Apps/messengerApp)
+2022-03-29 01:01:21,148 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.5, Spring v5.3.17
+2022-03-29 01:01:21,149 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "testWithH2DB"
+2022-03-29 01:01:21,633 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-03-29 01:01:21,636 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-03-29 01:01:21,636 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-03-29 01:01:21,647 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-03-29 01:01:21,648 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 478 ms
+2022-03-29 01:01:21,672 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-03-29 01:01:21,961 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-03-29 01:01:21,972 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/messenger'
+2022-03-29 01:01:21,978 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started MessengerAppApplication in 1.283 seconds (JVM running for 1502.254)
+2022-03-29 01:01:21,983 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-03-29 01:01:37,851 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting MessengerAppApplication using Java 1.8.0_321 on Sureshs-MacBook-Pro.local with PID 1088 (/Users/sureshbabu/Downloads/Apps/messengerApp/bin/main started by sureshbabu in /Users/sureshbabu/Downloads/Apps/messengerApp)
+2022-03-29 01:01:37,853 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.5, Spring v5.3.17
+2022-03-29 01:01:37,854 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "testWithH2DB"
+2022-03-29 01:01:37,949 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-29 01:01:37,949 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-29 01:01:40,024 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-03-29 01:01:40,034 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-29 01:01:40,034 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-03-29 01:01:40,035 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-03-29 01:01:40,214 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-03-29 01:01:40,215 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2265 ms
+2022-03-29 01:01:40,550 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-03-29 01:01:41,890 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-03-29 01:01:41,943 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-29 01:01:41,979 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/messenger'
+2022-03-29 01:01:42,017 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started MessengerAppApplication in 4.83 seconds (JVM running for 5.431)
+2022-03-29 01:01:58,151 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-29 01:01:58,153 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-03-29 01:01:58,157 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2022-03-29 01:01:58,524 INFO com.message.messenger.controller.EmailController [http-nio-8080-exec-1] Entering.. sendEmail with request::EmailRequest [emailAddress=gangadevi.muppal@abc.com, emailContent=Hi Ganga Greetings..]
+2022-03-29 01:01:58,529 INFO com.message.messenger.dao.H2EmailDao [http-nio-8080-exec-1] Entering... sendEmail
+2022-03-29 01:01:58,570 INFO com.message.messenger.dao.H2EmailDao [http-nio-8080-exec-1] Saved message::1
